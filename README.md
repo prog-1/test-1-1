@@ -21,22 +21,26 @@ print the total capacity of the condensers connected in series. The total capaci
    The total capacity of the three condensers connected in series is 0.5454545454545454.
    ```
 
-3. Write a program in the directory `ping-pong` that prints the numbers from 1
-to 100 (each number in a separate line) and for multiples of `2` prints `Ping`
-instead of the number and for numbers that are NOT multiples of `5` prints `Pong`.
+3. Write a program in the directory `ping-pong` that prints the following for
+a provided number:
 
-   Example:
+    - `Ping` if the number is divisible by 2;
+    - `Pong` if the number is divisible by 5;
+    - `PingPong` if the number is divisible by both 2 and 5;
+    - The number itself otherwise.
 
-   ```
-   Pong
-   PingPong
-   Pong
-   PingPong
-   5
-   PingPong
-   Pong
-   PingPong
-   Pong
-   Ping
-   ...
-   ```
+    Example 1:
+
+    ```
+    The program prints Ping, Pong or a number.
+    Enter a number: 12
+    Ping
+    ```
+
+    Example 2:
+
+    ```
+    The program pints Ping, Pong or a numbers.
+    Enter a number: 13
+    13
+    ```
