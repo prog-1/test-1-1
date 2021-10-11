@@ -11,20 +11,25 @@ func main() {
 	fmt.Scan(&num)
 
 	// TODO: What do the variables a, b and c store?
+	//проверяет делится ли число без остатка
 	a, b, c := num%10, num/10%10, num/100%10
 
 	// TODO: What do the three `if ... { ... }` statements below do?
 	if a > b {
 		a, b = b, a
+		//swaps a and b
 	}
 	if a > c {
 		a, c = c, a
+		//swaps a and c
 	}
 	if b > c {
 		b, c = c, b
+		//swaps c and b
 	}
 
 	// TODO: What do the three lines below do?
+	//These lines calculate (find) num
 	num = a
 	num = num*10 + b
 	num = num*10 + c
