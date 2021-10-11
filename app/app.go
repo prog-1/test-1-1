@@ -25,6 +25,7 @@ func main() {
 	}
 
 	// TODO: What do the three lines below do?
+	//
 	num = a
 	num = num*10 + b
 	num = num*10 + c
