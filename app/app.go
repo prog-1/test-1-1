@@ -5,15 +5,17 @@ import "fmt"
 // Replace the comments below with your explanations. Try to provide a
 // "high-level" idea, instead of writing literally what each line does.
 //
-// TODO: What does the program do?
+// This program if all numbers in variable num goes from biggest to smallest flips number to all numbers go from smallest to biggest.
 func main() {
 	var num uint
 	fmt.Scan(&num)
 
-	// TODO: What do the variables a, b and c store?
+	/* the variable number is divided into three numbers -
+	the first digit of the number, the second digit of the number and the third*/
 	a, b, c := num%10, num/10%10, num/100%10
 
-	// TODO: What do the three `if ... { ... }` statements below do?
+	// Then with if statements program finds which is the smallest biggest etc.
+	// the smallest number will be in a, biggest in c and not smallest and not biggest in b
 	if a > b {
 		a, b = b, a
 	}
@@ -24,7 +26,7 @@ func main() {
 		b, c = c, b
 	}
 
-	// TODO: What do the three lines below do?
+	// In this three lines program assumes number back in order to all number go from smallest to biggest
 	num = a
 	num = num*10 + b
 	num = num*10 + c
