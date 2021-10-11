@@ -5,15 +5,15 @@ import "fmt"
 // Replace the comments below with your explanations. Try to provide a
 // "high-level" idea, instead of writing literally what each line does.
 //
-// TODO: What does the program do?
+// in this programm user enters number and with that number some math manipulations
 func main() {
 	var num uint
 	fmt.Scan(&num)
 
-	// TODO: What do the variables a, b and c store?
+	// a, b, and c stores number, that user enter, devided by some numbers
 	a, b, c := num%10, num/10%10, num/100%10
 
-	// TODO: What do the three `if ... { ... }` statements below do?
+	// if statements sort 2 numbers and change their values in ascending order
 	if a > b {
 		a, b = b, a
 	}
@@ -24,7 +24,7 @@ func main() {
 		b, c = c, b
 	}
 
-	// TODO: What do the three lines below do?
+	// get num other numbers values
 	num = a
 	num = num*10 + b
 	num = num*10 + c
